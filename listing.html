@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/Style.css">
+</head>
+<body>
+    <header class="header container-fluid" id="header">
+        <a href="index.html" aria-label="Marci Metzger Homes home">
+            <img src="assets/Image/logo.webp" alt="Marci Metzger Homes Logo" class="logo">
+        </a>
+    </header>
+
+    <div class="page-shell container-fluid p-0">
+        <aside class="side-nav collapsed" id="sideNav" aria-label="Main navigation">
+            
+            <div class="nav-top">
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="listing.html">Listings</a>
+                <a href="contact.html">Let's Move</a>
+                <a href="aboutus.html">About Us</a>
+            </nav>
+        </aside>
+    </div>
+
+    <main class="list">
+        <div class="list-inner">
+            <p class="list-kicker">Pahrump &amp; Las Vegas Real Estate</p>
+            <h1>Need A Real Estate Agent? Let's Find Your Home!</h1>
+            <p class="list-intro">Click the button below for available real estate in Pahrump &amp; Las Vegas.</p>
+            <a class="list-button" href="https://www.zillow.com/profile/marcimetzger" target="_blank" rel="noopener noreferrer">Current Listings <span aria-hidden="true">&#8594;</span></a>
+        </div>
+    </main>
+
+    <section class="search-list" aria-labelledby="search-list-title">
+        <div class="search-list-inner">
+            <div class="search-list-heading">
+                <p class="list-kicker">Curated For You</p>
+                <h2 id="search-list-title">Find a place that feels like home.</h2>
+                <p>Shape your search around the details that matter most.</p>
+            </div>
+
+            <form class="listing-search-form" id="listingSearchForm">
+                <div class="search-field search-field-location">
+                    <label for="search-location">Location</label>
+                    <select id="search-location" name="location">
+                        <option value="">Any location</option>
+                        <option value="pahrump">Pahrump</option>
+                        <option value="las vegas">Las Vegas</option>
+                    </select>
+                </div>
+
+                <div class="search-field">
+                    <label for="search-type">Type</label>
+                    <select id="search-type" name="type">
+                        <option value="">Any type</option>
+                        <option value="single family">Single family</option>
+                        <option value="retreat">Retreat</option>
+                        <option value="modern">Modern home</option>
+                    </select>
+                </div>
+
+                <div class="search-field">
+                    <label for="search-sort">Sort by</label>
+                    <select id="search-sort" name="sort">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: low to high</option>
+                        <option value="price-high">Price: high to low</option>
+                    </select>
+                </div>
+
+                <div class="search-field">
+                    <label for="search-bedrooms">Bedrooms</label>
+                    <select id="search-bedrooms" name="bedrooms">
+                        <option value="">Any bedrooms</option>
+                        <option value="2">2+</option>
+                        <option value="3">3+</option>
+                        <option value="4">4+</option>
+                    </select>
+                </div>
+
+                <div class="search-field">
+                    <label for="search-baths">Baths</label>
+                    <select id="search-baths" name="baths">
+                        <option value="">Any baths</option>
+                        <option value="2">2+</option>
+                        <option value="3">3+</option>
+                    </select>
+                </div>
+
+                <div class="search-field search-field-price">
+                    <label for="search-min-price">Min price</label>
+                    <input id="search-min-price" name="min-price" type="number" min="0" step="10000" placeholder="$0">
+                </div>
+
+                <div class="search-field search-field-price">
+                    <label for="search-max-price">Max price</label>
+                    <input id="search-max-price" name="max-price" type="number" min="0" step="10000" placeholder="No max">
+                </div>
+
+                <button class="search-list-button" type="submit">Search listings <span aria-hidden="true">&#8594;</span></button>
+                <button class="search-reset" id="searchReset" type="button">Clear filters</button>
+            </form>
+            <p class="search-results-status" id="searchResultsStatus" aria-live="polite"></p>
+        </div>
+    </section>
+
+    <section class="list-tile" aria-labelledby="available-homes-title">
+        <div class="list-tile-heading">
+            <p class="list-kicker">Browse Properties</p>
+            <h2 id="available-homes-title">Find Your Next Home</h2>
+        </div>
+        <div class="list-tile-grid">
+            <article class="listing-card" tabindex="0" role="button" aria-label="View details for Mountain View Home" data-location="pahrump" data-type="single family" data-bedrooms="3" data-baths="2" data-price="389000" data-description="A welcoming desert home with wide-open mountain views and room to settle in."><img src="assets/Image/assets/bg1.jpg" alt="Desert home with mountain views"><div class="listing-card-content"><h3>Mountain View Home</h3><p>Pahrump, NV</p><strong>$389,000</strong></div></article>
+            <article class="listing-card" tabindex="0" role="button" aria-label="View details for Mountain Falls Retreat" data-location="pahrump" data-type="retreat" data-bedrooms="3" data-baths="2" data-price="425000" data-description="A peaceful Mountain Falls retreat with pond views, bright spaces, and a relaxed community setting."><img src="assets/Image/assets/mtn falls pond.jpg" alt="Mountain Falls property with pond views"><div class="listing-card-content"><h3>Mountain Falls Retreat</h3><p>Pahrump, NV</p><strong>$425,000</strong></div></article>
+            <article class="listing-card" tabindex="0" role="button" aria-label="View details for Bright Desert Living" data-location="pahrump" data-type="single family" data-bedrooms="2" data-baths="2" data-price="315000" data-description="An easygoing two-bedroom home designed around bright interiors and comfortable desert living."><img src="assets/Image/assets/ou1.jfif" alt="Bright home interior"><div class="listing-card-content"><h3>Bright Desert Living</h3><p>Pahrump, NV</p><strong>$315,000</strong></div></article>
+            <article class="listing-card" tabindex="0" role="button" aria-label="View details for Open Family Home" data-location="las vegas" data-type="single family" data-bedrooms="4" data-baths="3" data-price="495000" data-description="A spacious four-bedroom home with flexible rooms for family life, guests, or a home office."><img src="assets/Image/assets/ou2.jfif" alt="Comfortable home interior"><div class="listing-card-content"><h3>Open Family Home</h3><p>Las Vegas, NV</p><strong>$495,000</strong></div></article>
+            <article class="listing-card" tabindex="0" role="button" aria-label="View details for Modern Desert Space" data-location="pahrump" data-type="modern" data-bedrooms="3" data-baths="2" data-price="359000" data-description="A clean-lined modern space that brings natural light and practical comfort together."><img src="assets/Image/assets/ou3.jfif" alt="Modern home interior"><div class="listing-card-content"><h3>Modern Desert Space</h3><p>Pahrump, NV</p><strong>$359,000</strong></div></article>
+            <article class="listing-card" tabindex="0" role="button" aria-label="View details for Spacious Corner Home" data-location="las vegas" data-type="single family" data-bedrooms="4" data-baths="3" data-price="529000" data-description="A generous corner property with four bedrooms, three baths, and plenty of room to grow."><img src="assets/Image/assets/sd.jfif" alt="Spacious residential property"><div class="listing-card-content"><h3>Spacious Corner Home</h3><p>Las Vegas, NV</p><strong>$529,000</strong></div></article>
+            <article class="listing-card" tabindex="0" role="button" aria-label="View details for Quiet Neighborhood Home" data-location="pahrump" data-type="single family" data-bedrooms="3" data-baths="2" data-price="340000" data-description="A comfortable neighborhood home with a calm setting and an inviting layout."><img src="assets/Image/assets/sd2.jfif" alt="Nevada home exterior"><div class="listing-card-content"><h3>Quiet Neighborhood Home</h3><p>Pahrump, NV</p><strong>$340,000</strong></div></article>
+        </div>
+    </section>
+
+    <div class="listing-modal" id="listingModal" aria-hidden="true">
+        <div class="listing-modal-backdrop" data-modal-close></div>
+        <article class="listing-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalListingTitle">
+            <button class="listing-modal-close" type="button" aria-label="Close listing details" data-modal-close>&times;</button>
+            <img class="listing-modal-image" id="modalListingImage" src="" alt="">
+            <div class="listing-modal-content">
+                <p class="list-kicker">Property Details</p>
+                <h2 id="modalListingTitle"></h2>
+                <p class="listing-modal-location" id="modalListingLocation"></p>
+                <strong class="listing-modal-price" id="modalListingPrice"></strong>
+                <div class="listing-modal-facts">
+                    <span><b id="modalListingBedrooms"></b> bedrooms</span>
+                    <span><b id="modalListingBaths"></b> baths</span>
+                    <span id="modalListingType"></span>
+                </div>
+                <p id="modalListingDescription"></p>
+                <a class="list-button listing-modal-contact" href="contact.html">Ask about this home <span aria-hidden="true">&#8594;</span></a>
+            </div>
+        </article>
+    </div>
+     <footer class="footer" aria-label="Site footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="assets/Image/logo.webp" alt="Marci Metzger Homes" class="footer-logo">
+                <p>Local guidance for your next move in Pahrump, Nevada.</p>
+                <a class="footer-cta" href="tel:+17025550123">Call Marci <span aria-hidden="true">&#8594;</span></a>
+            </div>
+
+            <div class="footer-column">
+                <h2>Explore</h2>
+                <a href="index.html">Home</a>
+                <a href="listing.html">Listings</a>
+                <a href="contact.html">Let's Move</a>
+                <a href="aboutus.html">About Us</a>
+            </div>
+
+            <div class="footer-column">
+                <h2>Get in touch</h2>
+                <a href="tel:+17025550123">(702) 555-0123</a>
+                <a href="mailto:hello@marcimetzgerhomes.com">hello@marcimetzgerhomes.com</a>
+                <p>Pahrump, Nevada</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Marci Metzger Homes. All rights reserved.</p>
+            <p>THE RIDGE REALTY GROUP</p>
+        </div>
+    </footer>
+    <script src="assets/JavaScript.js"></script>
+</body>
+</html>

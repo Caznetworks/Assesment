@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marci Metzger Homes - Real Estate Agent, Real Estate, Realtor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/Style.css">
+</head>
+<body class="home-page">
+    <header class="header container-fluid" id="header">
+        <a href="index.html" aria-label="Marci Metzger Homes home">
+            <img src="assets/Image/logo.webp" alt="Marci Metzger Homes Logo" class="logo">
+        </a>
+    </header>
+
+    <div class="page-shell container-fluid p-0">
+        <aside class="side-nav collapsed" id="sideNav" aria-label="Main navigation">
+            
+            <div class="nav-top">
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="listing.html">Listings</a>
+                <a href="contact.html">Let's Move</a>
+                <a href="aboutus.html">About Us</a>
+            </nav>
+        </aside>
+    </div>
+
+    <div class="content container-fluid p-0">
+        <img src="assets/Image/BG.webp" alt="Marci Metzger Homes Hero Image" class="hero-image">
+        <main class="main-content" id="mainContent">
+            <section class="hero">
+                <p>MARCI METZGER - THE RIDGE REALTY GROUP</p>
+                <h1>Pahrump Realtor</h1>
+                <button class="cta-button btn btn-light" type="button">Call Now</button>
+            </section>
+        </main>
+    </div>
+
+    <h2 class="property-search-title container">Find a place that feels like home.</h2>
+   
+    <section class="search-list" aria-labelledby="search-list-title">
+        <div class="search-list-inner">
+            <div class="search-list-heading">
+                <p class="list-kicker">Curated For You</p>
+                <p>Shape your search around the details that matter most.</p>
+            </div>
+
+            <form class="listing-search-form" id="listingSearchForm">
+                <div class="search-field search-field-location">
+                    <label for="search-location">Location</label>
+                    <select id="search-location" name="location">
+                        <option value="">Any location</option>
+                        <option value="pahrump">Pahrump</option>
+                        <option value="las vegas">Las Vegas</option>
+                    </select>
+                </div>
+
+                <div class="search-field">
+                    <label for="search-type">Type</label>
+                    <select id="search-type" name="type">
+                        <option value="">Any type</option>
+                        <option value="single family">Single family</option>
+                        <option value="retreat">Retreat</option>
+                        <option value="modern">Modern home</option>
+                    </select>
+                </div>
+
+                <div class="search-field">
+                    <label for="search-sort">Sort by</label>
+                    <select id="search-sort" name="sort">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: low to high</option>
+                        <option value="price-high">Price: high to low</option>
+                    </select>
+                </div>
+
+                <div class="search-field">
+                    <label for="search-bedrooms">Bedrooms</label>
+                    <select id="search-bedrooms" name="bedrooms">
+                        <option value="">Any bedrooms</option>
+                        <option value="2">2+</option>
+                        <option value="3">3+</option>
+                        <option value="4">4+</option>
+                    </select>
+                </div>
+
+                <div class="search-field">
+                    <label for="search-baths">Baths</label>
+                    <select id="search-baths" name="baths">
+                        <option value="">Any baths</option>
+                        <option value="2">2+</option>
+                        <option value="3">3+</option>
+                    </select>
+                </div>
+
+                <div class="search-field search-field-price">
+                    <label for="search-min-price">Min price</label>
+                    <input id="search-min-price" name="min-price" type="number" min="0" step="10000" placeholder="$0">
+                </div>
+
+                <div class="search-field search-field-price">
+                    <label for="search-max-price">Max price</label>
+                    <input id="search-max-price" name="max-price" type="number" min="0" step="10000" placeholder="No max">
+                </div>
+
+                <button class="search-list-button" type="submit">Search listings <span aria-hidden="true">&#8594;</span></button>
+                <button class="search-reset" id="searchReset" type="button">Clear filters</button>
+            </form>
+            <p class="search-results-status" id="searchResultsStatus" aria-live="polite"></p>
+        </div>
+    </section>
+    
+    <section class="Carousel-pic" aria-label="Featured properties">
+        <div class="carousel-track" id="carouselTrack">
+            <article class="carousel-slide is-active">
+                <img src="assets/Image/P1.jfif" alt="Desert home exterior at sunset">
+                <div class="slide-content">
+                    <p class="slide-kicker">Featured in Pahrump</p>
+                    <h2>Find a place that feels like home.</h2>
+                    <p>Explore open spaces, quiet neighborhoods, and homes made for your next chapter.</p>
+                    <a href="#" class="slide-link">View featured homes</a>
+                </div>
+            </article>
+            <article class="carousel-slide">
+                <img src="assets/Image/P2.jfif" alt="Spacious desert property surrounded by mountains">
+                <div class="slide-content">
+                    <p class="slide-kicker">Room to breathe</p>
+                    <h2>More space for the life you want.</h2>
+                    <p>Discover properties with generous lots, wide-open views, and room to grow.</p>
+                    <a href="#" class="slide-link">Browse spacious homes</a>
+                </div>
+            </article>
+            <article class="carousel-slide">
+                <img src="assets/Image/P3.jfif" alt="Warm and welcoming home in a peaceful neighborhood">
+                <div class="slide-content">
+                    <p class="slide-kicker">A better move</p>
+                    <h2>Local guidance. Confident decisions.</h2>
+                    <p>Get thoughtful advice from a team that knows the Pahrump market inside and out.</p>
+                    <a href="#" class="slide-link">Meet the team</a>
+                </div>
+            </article>
+            <article class="carousel-slide">
+                <img src="assets/Image/P4.jfif" alt="Modern home with a wide desert landscape view">
+                <div class="slide-content">
+                    <p class="slide-kicker">Your next view</p>
+                    <h2>Wake up somewhere wonderful.</h2>
+                    <p>See what is possible when your wish list meets the right neighborhood.</p>
+                    <a href="#" class="slide-link">Start your search</a>
+                </div>
+            </article>
+            <article class="carousel-slide">
+                <img src="assets/Image/P5.jfif" alt="Beautiful home ready for its next owner">
+                <div class="slide-content">
+                    <p class="slide-kicker">Let's move</p>
+                    <h2>Your next address starts here.</h2>
+                    <p>Tell us what you are looking for, and we will help you find the right fit.</p>
+                    <a href="#" class="slide-link">Talk with Marci</a>
+                </div>
+            </article>
+            <article class="carousel-slide">
+                <img src="assets/Image/P6.jfif" alt="Sunlit home with a spacious desert yard">
+                <div class="slide-content">
+                    <p class="slide-kicker">Make it yours</p>
+                    <h2>Space to settle in and stay awhile.</h2>
+                    <p>Find a home with the comfort, character, and room your everyday life needs.</p>
+                    <a href="#" class="slide-link">Explore more homes</a>
+                </div>
+            </article>
+            <article class="carousel-slide">
+                <img src="assets/Image/P7.jfif" alt="Peaceful desert home at golden hour">
+                <div class="slide-content">
+                    <p class="slide-kicker">Pahrump living</p>
+                    <h2>Come home to a wider horizon.</h2>
+                    <p>Let local insight lead you to a property and community that feel like the right fit.</p>
+                    <a href="#" class="slide-link">Find your next home</a>
+                </div>
+            </article>
+        </div>
+        <button class="carousel-control carousel-prev" type="button" aria-label="Previous slide">&#8592;</button>
+        <button class="carousel-control carousel-next" type="button" aria-label="Next slide">&#8594;</button>
+        <div class="carousel-dots" aria-label="Choose a slide">
+            <button class="carousel-dot is-active" type="button" aria-label="Go to slide 1" aria-current="true"></button>
+            <button class="carousel-dot" type="button" aria-label="Go to slide 2"></button>
+            <button class="carousel-dot" type="button" aria-label="Go to slide 3"></button>
+            <button class="carousel-dot" type="button" aria-label="Go to slide 4"></button>
+            <button class="carousel-dot" type="button" aria-label="Go to slide 5"></button>
+            <button class="carousel-dot" type="button" aria-label="Go to slide 6"></button>
+            <button class="carousel-dot" type="button" aria-label="Go to slide 7"></button>
+        </div>
+    </section>
+
+    <section class="Tile-pic" aria-label="Featured property types">
+        <div class="tile-heading">
+            <p class="tile-kicker">Explore Pahrump</p>
+            <h2>GET IT SOLD</h2>
+        </div>
+
+        <div class="tile-grid row g-4">
+            <article class="property-tile col-12 col-md-4">
+                <img src="assets/Image/BG.webp" alt="Desert home with mountain views">
+                <div class="tile-description">
+                    <h3>Desert Homes</h3>
+                    <p>Comfortable homes with open skies and beautiful mountain views.</p>
+                </div>
+            </article>
+            <article class="property-tile col-12 col-md-4">
+                <img src="assets/Image/BG.webp" alt="Spacious property in a quiet neighborhood">
+                <div class="tile-description">
+                    <h3>Quiet Neighborhoods</h3>
+                    <p>Discover peaceful streets and welcoming communities in Pahrump.</p>
+                </div>
+            </article>
+            <article class="property-tile col-12 col-md-4">
+                <img src="assets/Image/BG.webp" alt="Property with a large open lot">
+                <div class="tile-description">
+                    <h3>Open Lots</h3>
+                    <p>Make room for your plans with land ready for a future home.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="insponsors" aria-label="Pahrump community highlights">
+        <div class="insponsors-inner">
+            <div class="insponsor-grid row g-4">
+                <figure class="insponsor-card col-6 col-lg-3">
+                    <img src="assets/Image/sponsor1.png" alt="Pahrump home exterior">
+                </figure>
+                <figure class="insponsor-card col-6 col-lg-3">
+                    <img src="assets/Image/sponsor2.png" alt="Pahrump property and open landscape">
+                </figure>
+                <figure class="insponsor-card col-6 col-lg-3">
+                    <img src="assets/Image/sponsor3.jfif" alt="Welcoming Pahrump neighborhood home">
+                </figure>
+                <figure class="insponsor-card col-6 col-lg-3">
+                    <img src="assets/Image/sponsor4.jfif" alt="Pahrump home with desert views">
+                </figure>
+            </div>
+        </div>
+    </section>
+    
+    <section class="callorvisit" aria-label="Call or visit Marci Metzger">
+        <div class="contact-inner">
+            <header class="contact-heading">
+                <p class="contact-kicker">Let's Connect</p>
+                <h2>Call or Visit</h2>
+                <p>Drop us a line or stop by and say hello!</p>
+            </header>
+
+            <form class="contact-form">
+                <div class="contact-field">
+                    <label for="home-contact-name">Name</label>
+                    <input id="home-contact-name" name="name" type="text" required>
+                </div>
+
+                <div class="contact-field">
+                    <label for="home-contact-email">Email<span aria-hidden="true">*</span></label>
+                    <input id="home-contact-email" name="email" type="email" required>
+                </div>
+
+                <div class="contact-field contact-message-field">
+                    <label for="home-contact-message">Message</label>
+                    <textarea id="home-contact-message" name="message" rows="4" required></textarea>
+                </div>
+
+                <button class="contact-submit" type="submit">Send</button>
+                <p class="contact-note">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+            </form>
+
+            <section class="contact-intro">
+                <h3>Better yet, see us in person!</h3>
+                <p>We can be reached any day of the week.</p>
+            </section>
+
+            <div class="contact-details">
+                <section class="contact-detail">
+                    <h3>marcimetzger@gmail.com</h3>
+                    <p>3190 S HW 160, Suite F, Pahrump, NV 89048</p>
+                    <p><a href="tel:+12069196886">(206) 919-6886</a> / <a href="tel:+14259412560">(425) 941-2560</a></p>
+                </section>
+
+                <section class="contact-detail contact-hours">
+                    <h3>Hours</h3>
+                    <p>Mon 08:00 am - 07:00 pm</p>
+                    <p><strong>Tue&nbsp; 08:00 am - 07:00 pm</strong></p>
+                    <p>Wed 08:00 am - 07:00 pm</p>
+                    <p>Thu 08:00 am - 07:00 pm</p>
+                    <p>Fri&nbsp;&nbsp;&nbsp; 08:00 am - 07:00 pm</p>
+                    <p>Sat&nbsp;&nbsp; 08:00 am - 07:00 pm</p>
+                    <p>Sun&nbsp; 08:00 am - 07:00 pm</p>
+                    <p class="contact-appointment">Appointment times available outside normal business hours. Just call!</p>
+                </section>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <div class="map-inner">
+            <div class="map-heading">
+                <p class="contact-kicker">Find Us</p>
+                <h2>Come visit our Pahrump office.</h2>
+                <p>3190 S HW 160, Suite F, Pahrump, NV 89048</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=3190+S+Highway+160+Suite+F+Pahrump+NV+89048" target="_blank" rel="noopener noreferrer">Open in Google Maps <span aria-hidden="true">&#8594;</span></a>
+            </div>
+            <div class="map-frame">
+                <iframe
+                    title="Map showing the Marci Metzger Homes office in Pahrump, Nevada"
+                    src="https://www.google.com/maps?q=3190+S+Highway+160+Suite+F+Pahrump+NV+89048&output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" aria-label="Site footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="assets/Image/logo.webp" alt="Marci Metzger Homes" class="footer-logo">
+                <p>Local guidance for your next move in Pahrump, Nevada.</p>
+                <a class="footer-cta" href="tel:+17025550123">Call Marci <span aria-hidden="true">&#8594;</span></a>
+            </div>
+
+            <div class="footer-column">
+                <h2>Explore</h2>
+                <a href="index.html">Home</a>
+                <a href="listing.html">Listings</a>
+                <a href="contact.html">Let's Move</a>
+                <a href="aboutus.html">About Us</a>
+            </div>
+
+            <div class="footer-column">
+                <h2>Get in touch</h2>
+                <a href="tel:+17025550123">(702) 555-0123</a>
+                <a href="mailto:hello@marcimetzgerhomes.com">hello@marcimetzgerhomes.com</a>
+                <p>Pahrump, Nevada</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Marci Metzger Homes. All rights reserved.</p>
+            <p>THE RIDGE REALTY GROUP</p>
+        </div>
+    </footer>
+
+    <script src="assets/JavaScript.js"></script>
+</body>
+</html>
